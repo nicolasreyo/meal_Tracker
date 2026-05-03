@@ -1,0 +1,6 @@
+{
+  "name": "Nico's Nutrition & Meal Tracker",
+  "description": "A personalized meal and water tracking app based on Nicolas Rey's nutritional plan, featuring AI-powered food identification and macro logging.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["AI Food Recognition", "Water Tracking", "Macro Logging"]
+}

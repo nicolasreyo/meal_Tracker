@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;600&display=swap');
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-bg: #FEF9EF;
+  --color-brand-dark: #2D3436;
+  --color-brand-red: #FF6B6B;
+  --color-brand-teal: #4ECDC4;
+  --color-brand-yellow: #FFD93D;
+  --color-brand-purple: #6C5CE7;
+  --color-brand-mint: #A0E7E5;
+  --color-brand-gray: #F1F2F6;
+  --color-brand-blue: #74B9FF;
+  --color-brand-blue-dark: #0984E3;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-dark);
+  font-family: var(--font-sans);
+}
+
+.brutalist-card {
+  border: 4px solid var(--color-brand-dark);
+  border-radius: 32px;
+  box-shadow: 8px 8px 0px 0px var(--color-brand-dark);
+}
+
+.brutalist-button {
+  border: 4px solid var(--color-brand-dark);
+  box-shadow: 4px 4px 0px 0px var(--color-brand-dark);
+  transition: all 0.2s ease;
+}
+
+.brutalist-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px var(--color-brand-dark);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
